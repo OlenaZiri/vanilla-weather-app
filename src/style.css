@@ -1,3 +1,55 @@
-.container {
-  max-width: 720px;
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1,
+li,
+small {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: #402c1a;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 38px;
+  margin-bottom: 10px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #261c14;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+.bg {
+  height: 100%;
+  border: 1px solid transparent;
+  background-image: url("img/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrapper-weather {
+  padding: 30px;
+  background-color: #f2f2f2;
+  opacity: 0.7;
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+.wrapper-main {
+  max-width: 600px;
+  margin: 30px auto;
 }
