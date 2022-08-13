@@ -14,7 +14,37 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <div class="wrapper">
+        <div class="row">
+          <div class="col-6">
+            <h1 id="city">New York</h1>
+            <ul>
+              <li>Last updated: <span id="date">Saturday 15:24</span></li>
+              <li id="description">Clear sky</li>
+              <li>Humidity: <span id="humidity">30</span>%</li>
+              <li>Wind: <span id="wind">2</span> m/h</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <img
+              src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
+              alt="Clear sky"
+            />
+            <strong id="temperature">23</strong
+            ><span class="units">°C | °F</span>
+          </div>
+        </div>
+        <small>
+          <a
+            href="https://github.com/OlenaZiri/vanilla-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by Olena Romanova
+        </small>
+      </div>
+    </div>
     <script src="src/app.js"></script>
   </body>
 </html>
