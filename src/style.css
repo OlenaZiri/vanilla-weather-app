@@ -7,13 +7,14 @@ body {
 h1,
 li,
 small,
-strong {
+strong,
+a,
+.weather-temperature .active {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #261c14;
 }
 h1 {
-  color: #402c1a;
   font-size: 32px;
   font-weight: 800;
   line-height: 38px;
@@ -29,11 +30,20 @@ li {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 21px;
 }
 li:first-letter {
   text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+  color: blue;
+}
+small {
+  position: relative;
+  margin-left: 20px;
+  top: 10px;
 }
 .bg {
   height: 100%;
@@ -52,11 +62,13 @@ li:first-letter {
   background-color: rgba(242, 242, 242, 0.7);
   border: 1px solid transparent;
   border-radius: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .weather-temperature img {
-  height: 90px;
-  width: 90px;
-  margin-right: 10px;
+  height: 120px;
+  width: 120px;
+  position: relative;
+  top: -25px;
 }
 .weather-temperature strong {
   font-size: 78px;
@@ -71,4 +83,12 @@ li:first-letter {
 .btn-primary {
   background-color: #74818c;
   border: 1px solid #74818c;
+}
+.weather-temperature .active {
+  cursor: default;
+  font-weight: 400;
+  text-decoration: none;
+}
+.weather-temperature .active:hover {
+  text-decoration: none;
 }
