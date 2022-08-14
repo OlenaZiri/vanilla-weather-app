@@ -68,3 +68,7 @@ li:first-letter {
   font-size: 18px;
   top: -39px;
 }
+.btn-primary {
+  background-color: #74818c;
+  border: 1px solid #74818c;
+}
