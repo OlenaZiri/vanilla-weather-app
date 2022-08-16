@@ -2,23 +2,21 @@ html,
 body {
   margin: 0;
   height: 100%;
-}
-
-h1,
-li,
-small,
-strong,
-a,
-.weather-temperature .active {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: #261c14;
+}
+li,
+small,
+.weather-temperature .active,
+.weather-forecast-temp {
 }
 h1 {
   font-size: 32px;
   font-weight: 800;
   line-height: 38px;
   margin-bottom: 10px;
+  color: #59554d;
 }
 ul {
   margin: 0;
@@ -65,15 +63,16 @@ small {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .weather-temperature img {
-  height: 120px;
-  width: 120px;
+  height: 110px;
+  width: 110px;
   position: relative;
-  top: -25px;
+  top: -20px;
 }
 .weather-temperature strong {
   font-size: 78px;
   line-height: 1;
   font-weight: 400;
+  color: #59554d;
 }
 .weather-temperature .units {
   position: relative;
@@ -88,7 +87,24 @@ small {
   cursor: default;
   font-weight: 400;
   text-decoration: none;
+  color: #261c14;
 }
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+  color: #59554d;
+  font-weight: 600;
+}
+.weather-forecast-temp {
+  font-size: 13px;
+}
+.weather-forecast-temp-min {
+  opacity: 0.5;
 }
