@@ -63,13 +63,13 @@ small {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .weather-temperature img {
-  height: 110px;
-  width: 110px;
+  height: 90px;
+  width: 90px;
   position: relative;
-  top: -20px;
+  top: -12px;
 }
 .weather-temperature strong {
-  font-size: 78px;
+  font-size: 68px;
   line-height: 1;
   font-weight: 400;
   color: #59554d;
